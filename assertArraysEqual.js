@@ -14,7 +14,7 @@ const eqArrays = function(arr1, arr2) {
 };
 
 const assertArraysEqual = function(actual, expected) {
-  if (actual === true) {
+  if (actual === expected) {
     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
   } else {
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
@@ -23,5 +23,5 @@ const assertArraysEqual = function(actual, expected) {
 
 
 // TEST CODE
-const eqArrayResult = eqArrays([1, 3, 7], [2, 4, 7]);
+const eqArrayResult = eqArrays([2, 4, 7], [2, 4, 7]);
 assertArraysEqual(eqArrayResult, false);
