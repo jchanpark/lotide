@@ -31,7 +31,9 @@ const without = function(sourceArr, itemsToRemove) {
   return newArr;
 };
 
+module.exports = without;
+
 // TEST CODE
-const words = ["hello", "world", "lighthouse"];
-console.log(without(words, ["lighthouse"]));
-assertArraysEqual(eqArrays(words, ["hello", "world", "lighthouse"]), true);
+// const words = ["hello", "world", "lighthouse"];
+// console.log(without(words, ["lighthouse"]));
+// assertArraysEqual(eqArrays(words, ["hello", "world", "lighthouse"]), true);
